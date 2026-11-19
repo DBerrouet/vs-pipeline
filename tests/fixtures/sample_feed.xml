@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Sample vegan business feed</title>
+<link>https://example.com</link>
+<description>Test fixture</description>
+<item>
+  <title>Good Protein secures C$128M to expand dairy-free protein shakes</title>
+  <link>https://example.com/good-protein-128m?utm_source=rss</link>
+  <description><![CDATA[<p>Montreal brand Good Protein closed a C$128M investment led by SEMCAP Food &amp; Nutrition.</p>]]></description>
+  <pubDate>{D1}</pubDate>
+</item>
+<item>
+  <title>Good Protein secures C$128M to expand its dairy-free shakes</title>
+  <link>https://news.google.com/rss/articles/abc123</link>
+  <description>Same story via Google News.</description>
+  <pubDate>{D1}</pubDate>
+</item>
+<item>
+  <title>Oobli acquired by Amyris in precision fermentation sweet protein deal</title>
+  <link>https://example.com/amyris-oobli</link>
+  <description>Amyris to acquire precision fermentation startup Oobli.</description>
+  <pubDate>{D2}</pubDate>
+</item>
+<item>
+  <title>Daring launches Plant Steak Bites at Publix</title>
+  <link>https://example.com/daring-steak</link>
+  <description>Daring debuts its first beef alternative, a Publix exclusive.</description>
+  <pubDate>{D2}</pubDate>
+</item>
+<item>
+  <title>Veganz holding enters insolvency proceedings</title>
+  <link>https://example.com/veganz</link>
+  <description>The German vegan pioneer is insolvent.</description>
+  <pubDate>{D3}</pubDate>
+</item>
+<item>
+  <title>Insect protein startup raises $12M for cricket farm</title>
+  <link>https://example.com/crickets</link>
+  <description>Cricket farming company funding round.</description>
+  <pubDate>{D3}</pubDate>
+</item>
+<item>
+  <title>Plant-based market report: Q3 total hits $71M</title>
+  <link>https://example.com/q3-report</link>
+  <description>GFI report: the plant-based market total was $71M.</description>
+  <pubDate>{D3}</pubDate>
+</item>
+<item>
+  <title>Ten easy vegan recipes for autumn</title>
+  <link>https://example.com/recipes</link>
+  <description>Cooking ideas.</description>
+  <pubDate>{D3}</pubDate>
+</item>
+</channel>
+</rss>

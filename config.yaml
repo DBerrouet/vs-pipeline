@@ -1,0 +1,29 @@
+# Pipeline settings. Environment variables override the model:
+#   VSP_MODEL=claude-sonnet-5-5   (default below)
+#   VSP_FAKE_LLM=1                (keyword classifier, no API calls — for testing)
+
+model: claude-haiku-5-5
+
+# Only stories published in the last N days are classified (stops a first
+# run from spending money on old feed backlog).
+classify_max_age_days: 10
+
+# The Monday digest covers stories published in the last N days.
+digest_lookback_days: 7
+
+# Stories scoring below this never make the draft (0–10 scale).
+min_relevance: 4
+
+# An adjacent (animal-free tech) story only leads the issue if it scores
+# this many points above the best core (vegan brand) story.
+adjacent_lead_margin: 3
+
+# Max items per section in the draft. Extras go to "Other candidates".
+section_limits:
+  money_moves: 6
+  launch_radar: 4
+  regulation: 3
+  exits_shutdowns: 4
+
+newsletter_name: Vegan Startup Weekly
+closing_line: "Know a vegan startup we should cover? Hit reply — every email gets read."

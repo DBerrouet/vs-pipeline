@@ -1,0 +1,45 @@
+# Sources the pipeline polls every day.
+# Set enabled: false to pause a feed. Check the "Feed health" table at the
+# bottom of each digest: a feed that keeps erroring or returning 0 items
+# needs a new URL.
+
+feeds:
+  - name: vegconomist
+    url: https://vegconomist.com/feed/
+    enabled: true
+
+  - name: vegconomist (fundraising)
+    url: https://vegconomist.com/category/investments-finance/fundraising/feed/
+    enabled: true
+
+  - name: Green Queen
+    url: https://www.greenqueen.com.hk/feed/
+    enabled: true
+
+  - name: AgFunderNews
+    url: https://agfundernews.com/feed
+    enabled: true
+
+  - name: EU-Startups
+    url: https://www.eu-startups.com/feed/
+    enabled: true
+
+  # The PlantBase Mag runs on Wix, whose blogs usually expose /blog-feed.xml.
+  # Not verified: if the feed health table shows an error, disable it.
+  - name: The PlantBase Mag
+    url: https://www.theplantbasemag.com/blog-feed.xml
+    enabled: true
+
+  # Google News searches catch stories from outlets not listed above.
+  # Links go through news.google.com redirects; dedupe merges them with
+  # the same story from a direct source.
+  - name: Google News (vegan startup funding)
+    url: https://news.google.com/rss/search?q=%22vegan%22+startup+(raises+OR+funding+OR+seed+OR+%22series+a%22)+when:7d&hl=en-US&gl=US&ceid=US:en
+    enabled: true
+
+  - name: Google News (plant-based raises)
+    url: https://news.google.com/rss/search?q=%22plant-based%22+(raises+OR+funding+OR+acquires+OR+insolvency)+when:7d&hl=en-US&gl=US&ceid=US:en
+    enabled: true
+
+# GFI's quarterly investment data has no feed: check https://gfi.org/investment/
+# by hand for the "One number" section.
