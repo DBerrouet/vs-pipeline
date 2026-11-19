@@ -20,8 +20,12 @@ feeds:
     url: https://agfundernews.com/feed
     enabled: true
 
-  - name: EU-Startups
+    - name: EU-Startups
     url: https://www.eu-startups.com/feed/
+    enabled: false   # 403: blocks automated requests
+
+  - name: Google News (EU-Startups, vegan)
+    url: https://news.google.com/rss/search?q=site:eu-startups.com+(vegan+OR+%22plant-based%22+OR+%22alt-protein%22)+when:7d&hl=en-US&gl=US&ceid=US:en
     enabled: true
 
   # The PlantBase Mag runs on Wix, whose blogs usually expose /blog-feed.xml.
